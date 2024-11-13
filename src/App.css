@@ -1,0 +1,296 @@
+
+
+body {
+  background-color: #cbdbeb;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMk97ZYS25deAuqhEIlbA7CIzM9phfBa3Xkw&s");
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #343a40;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card {
+  background: linear-gradient(145deg, #ebcaca, #e6e6e6);
+  border-radius: 12px;
+}
+
+.container {
+  max-width: 960px;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .card-title, .card-subtitle, .card-text {
+    text-align: left;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fceb03;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: transform 0.1s ease;
+}
+
+.h1, h2, h3, h4, h5, h6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fceb03;
+  margin-top: 1.5rem;
+  text-decoration: underline;
+  transition: transform 0.1s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  padding: 20px;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.upvotes {
+  font-size: 0.85rem;
+  color: #15da1f;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button.primary:hover {
+  background-color: #0056b3;
+}
+
+button.secondary {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.secondary:hover {
+  background-color: #b02a37;
+}
+
+form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfpIyrJbVdd9S32dVFz3aHDi5CSKKWRCSYsw&s");
+  max-width: 600px;
+  margin: 2rem auto;
+  transition: transform 0.1s ease;
+}
+
+.form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+form label {
+  font-weight: 600;
+  color: #000408;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  text-align: center;
+  color:#000408;;
+  margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 0.75rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* 
+
+body {
+  background-color: #2b4055; 
+}
+
+h2 {
+  font-weight: bold;
+  color: #f7f8f8; 
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+.container {
+  max-width: 960px; 
+}
+
+button {
+  margin-top: 5px;
+}
+
+
+.card:hover {
+  transition: transform 0.2 ease;
+}
+.button:hover {
+  transition: transform 0.2 ease;
+}
+.container:hover {
+  transition: transform 0.2 ease;
+} */
